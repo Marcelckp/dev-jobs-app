@@ -120,7 +120,7 @@ export default function Home({ data }: Props) {
                     className="relative h-72 cursor-pointer rounded-lg bg-white p-5 px-10"
                   >
                     <div
-                      className="absolute top-[-30px] flex h-16 w-16 justify-center rounded-2xl p-3"
+                      className="absolute top-[-30px] flex h-16 w-16 justify-center  rounded-2xl p-3"
                       style={{ backgroundColor: `${val.logoBackground}` }}
                     >
                       <img

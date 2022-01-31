@@ -54,10 +54,10 @@ function job({ data }: dataJSONitem) {
       <div className="fixed top-[25px] z-10 flex w-full flex-col items-center justify-center pb-10">
         <section className="relative mt-40 flex h-40 w-1/2 items-center  bg-white">
           <div
-            className="absolute left-0 flex h-full w-44 items-center justify-center"
+            className="absolute left-0 flex h-full w-44 items-center justify-center p-2"
             style={{ backgroundColor: `${data.logoBackground}` }}
           >
-            <img className='w-24 h-14' src={`.${data.logo}`} alt="" />
+            <img className='w-auto h-14' src={`.${data.logo}`} alt="" />
           </div>
           <div className="ml-60 mr-16 flex w-full items-center justify-between">
             <div className="flex flex-col">
