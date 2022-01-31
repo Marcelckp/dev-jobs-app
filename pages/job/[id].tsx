@@ -20,7 +20,7 @@ function job({ data }: dataJSONitem) {
   return (
     <div className=" h-screen w-full scrollbar-hide">
       <Head>Dev Jobs</Head>
-      <header className="fixed top-0 z-10 flex h-60 w-full justify-center rounded-bl-full rounded-br-full bg-[#5964E0]">
+      <header className="fixed top-0 z-10 flex h-60 w-full justify-center rounded-none 2xl:rounded-bl-full 2xl:rounded-br-full bg-[#5964E0]">
         <div className="mt-16 flex w-4/5 justify-between text-5xl font-medium text-white">
           <div className="z-30" onClick={() => router.push('/')}>
             <h1>dev Jobs</h1>
