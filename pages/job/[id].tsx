@@ -57,7 +57,7 @@ function job({ data }: dataJSONitem) {
             className="absolute left-0 flex h-full w-44 items-center justify-center p-2"
             style={{ backgroundColor: `${data.logoBackground}` }}
           >
-            <img className='w-auto h-14' src={`.${data.logo}`} alt="" />
+            <img className="h-14 w-auto" src={`.${data.logo}`} alt="" />
           </div>
           <div className="ml-60 mr-16 flex w-full items-center justify-between">
             <div className="flex flex-col">
@@ -171,13 +171,14 @@ export const getStaticPaths = async () => {
   }
 }
 export const getStaticProps: GetStaticProps = async (
-  context: GetStaticPropsContext
+  context: GetStaticPropsContext // any solves the bottom issue
 ) => {
-  const idx = +context.params.id - 1
-  const data = dataJSON[idx]
-  return {
-    props: {
-      data,
-    },
-  }
+    const { id } = context?.params;
+    const data = dataJSON[id - 1];
+    console.log(id);
+    return {
+      props: {
+        data,
+      },
+    }
 }
