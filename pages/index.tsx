@@ -39,7 +39,7 @@ export default function Home({ data }: Props) {
   return (
     <div className=" h-screen w-full">
       <Head>Dev Jobs</Head>
-      <header className="fixed top-0 z-10 flex h-60 w-full justify-center rounded-bl-full rounded-br-full bg-[#5964E0]">
+      <header className="fixed top-0 z-10 flex h-60 w-full justify-center rounded-none 2xl:rounded-bl-full 2xl:rounded-br-full bg-[#5964E0]">
         <div className="mt-16 flex w-4/5 justify-between text-5xl font-medium text-white">
           <div>
             <h1>dev Jobs</h1>
@@ -88,7 +88,7 @@ export default function Home({ data }: Props) {
               />
             </div>
           </div>
-          <div className="flex h-full w-full items-center justify-center border-r-2">
+          <div className="flex h-full w-full items-center justify-center">
             <div className="flex w-full items-center justify-center space-x-4">
               <svg width="20" height="30" xmlns="http://www.w3.org/2000/svg">
                 <path
